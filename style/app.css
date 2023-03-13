@@ -1,0 +1,415 @@
+@import "reset.css";
+@import "grid.css";
+@import "font.css";
+
+/* ------------------------------
+===========   root   ==========
+------------------------------ */
+
+:root {
+  --Platinum-color: #e5e5e5;
+  --AmericanSilver-color: #cecdcf;
+  --SasquatchSocks-color: #be2686;
+  --AmericanViolet-color: #5b1587;
+  --SmokyCharcoal-color: #3b3737;
+}
+
+/* ------------------------------
+=======   Reset Style  =======
+------------------------------ */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ------------------------------
+===========   App   ==========
+------------------------------ */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "IranSans";
+  font-size: 1.6rem;
+  line-height: 1.6;
+  direction: rtl;
+  background-color: var(--Platinum-color);
+  color: var(--SmokyCharcoal-color);
+}
+
+/* ------------------------------
+======   Helper Class  ======
+------------------------------ */
+
+.page-btn {
+  color: var(--AmericanViolet-color);
+  font-family: "IranSans";
+  font-size: 1.8rem;
+  border: 3px solid var(--SasquatchSocks-color);
+  border-radius: 0.5rem;
+  padding: 0.3rem 1rem;
+  text-align: center;
+  transition: all 150ms ease-in;
+}
+.page-btn:hover {
+  color: var(--Platinum-color);
+  background-color: var(--SasquatchSocks-color);
+}
+.section-infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-right: 10px solid var(--AmericanViolet-color);
+  border-bottom: 4px solid var(--AmericanViolet-color);
+}
+
+.section__title {
+  font-family: "IranSans-Bold";
+  font-size: 2rem;
+}
+
+/* ------------------------------
+======   Header Style  ======
+------------------------------ */
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url("../img/background-2.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.header .header-parts {
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.header .navbar {
+  background-color: rgba(229, 229, 229, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.header .logo {
+  padding: 0.7rem;
+}
+
+.header .logo__img {
+  width: 9rem;
+  height: 4rem;
+}
+.header .menu {
+  padding: 1.2rem 0;
+}
+.header .menu__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .menu__item {
+  margin-left: 4rem;
+}
+.header .menu__item:last-child {
+  margin-left: 0rem;
+}
+.header .menu__item-link {
+  display: inline-block;
+  font-family: "IranSans-Bold";
+  color: var(--AmericanViolet-color);
+  transition: all 150ms ease-in;
+  font-size: 1.7rem;
+}
+.header .menu__item-link--active {
+  color: var(--SasquatchSocks-color);
+}
+.header .menu__item-link:hover {
+  color: var(--SasquatchSocks-color);
+}
+
+.header .left-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+}
+.header .member {
+  padding-left: 1.5rem;
+}
+
+.header .nav__toggle-icon {
+  display: none;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.header .nav__toggle-line {
+  position: relative;
+  transition: all 50ms;
+}
+
+.header .nav__toggle-line,
+.header .nav__toggle-line::before,
+.header .nav__toggle-line::after {
+  content: "";
+  width: 3rem;
+  height: 0.4rem;
+  background-color: #5b1587;
+  border-radius: 2rem;
+}
+.header .nav__toggle-line::before {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  transition: all 150ms ease-in;
+}
+.header .nav__toggle-line::after {
+  position: absolute;
+  right: 0;
+  top: -1rem;
+  transition: all 150ms ease-in;
+}
+
+.header .nav__toggle-icon--open .nav__toggle-line {
+  background-color: transparent;
+}
+.header .nav__toggle-icon--open .nav__toggle-line::before {
+  transform: translateY(-1rem) rotate(-45deg);
+}
+.header .nav__toggle-icon--open .nav__toggle-line::after {
+  transform: translateY(1rem) rotate(45deg);
+}
+
+.header .landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.header .landing__title {
+  font-family: "IranSans-Bold";
+  font-size: 3.5rem;
+  color: var(--Platinum-color);
+}
+
+.header .landing__subtitle {
+  font-family: "IranSans";
+  font-size: 2rem;
+  padding: 2rem 0;
+  color: var(--Platinum-color);
+}
+
+.header .landing__searchbar {
+  width: 50rem;
+  position: relative;
+}
+
+.header .landing__searchbar-input {
+  font-family: "IranSans";
+  width: 100%;
+  padding: 1.8rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+
+.header .landing__searchbar-btn {
+  border: none;
+  background-color: var(--AmericanViolet-color);
+  position: absolute;
+  left: 0.4rem;
+  top: 0.4rem;
+  width: 4.7rem;
+  height: 4.7rem;
+  border-radius: 1rem;
+}
+
+.header .landing__searchbar-icon {
+  font-size: 2.2rem;
+  color: white;
+}
+
+/* ------------------------------
+======   Courses Style  ======
+------------------------------ */
+
+.courses {
+  margin-top: 2rem;
+}
+.courses .section-parts {
+  display: flex;
+  flex-direction: column;
+}
+.courses .courses-content {
+  margin-top: 2rem;
+}
+.courses .course-box {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--AmericanSilver-color);
+  box-shadow: 0 0 19px rgba(168, 172, 185, 0.5);
+  border-radius: 1rem;
+  margin: 2rem 0;
+  transition: all 400ms ease;
+}
+.courses .course-box:hover {
+  transform: translateY(-0.6rem);
+}
+.courses .course-box__img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+.courses .course-box__main {
+  padding: 0 1.2rem;
+}
+.courses .course-box__title {
+  display: block;
+  text-align: center;
+  padding: 0.7rem 0 2rem 0;
+  font-family: "IranSans-Bold";
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.courses .course-box__teacher-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.courses .course-box-teacher {
+  display: flex;
+  align-items: center;
+}
+.courses .course-box__teacher-icon {
+  font-size: 1.8rem;
+}
+.courses .course-box__teacher-link {
+  font-size: 1.2rem;
+  margin-right: 0.4rem;
+}
+.courses .course-box__star {
+  margin: -0.2rem;
+}
+.courses .course-box__users-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.courses .course-box__users-icon {
+  font-size: 1.6rem;
+}
+.courses .course-box__users-text {
+  font-size: 1.4rem;
+}
+.courses .course-box__price {
+  font-size: 1.8rem;
+}
+.courses .course-box__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.3rem 0;
+  border-top: 1px solid #e8e8e8;
+}
+.courses .course-box__footer-link {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.courses .course-box__footer-icon {
+  margin-right: 0.5rem;
+  font-size: 1.9rem;
+}
+
+/* ------------------------------
+======   Teachers Style  ======
+------------------------------ */
+
+.teachers {
+  margin-top: 2rem;
+}
+.teachers .teacher {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url("../img/teachers/b1.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 2rem 0 5rem 0;
+  position: relative;
+}
+.teachers .teacher__infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+  position: absolute;
+}
+
+.teachers .teacher__img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+
+}
+.teachers .teacher__name {
+  font-family: 'IranSans-Bold';
+  color: var(--Platinum-color);
+  margin: 1rem 0 .5rem 0;
+  font-size: 2rem;
+}
+.teachers .teacher__degree {
+  font-size: 1.7rem;
+  margin-bottom: 3.5rem;
+  color: var(--Platinum-color);
+
+}
+.teachers .teacher__about {
+  color: var(--Platinum-color);
+  text-align: justify;
+}
+
+.teachers .swiper {
+  width: 100%;
+  height: 35rem;
+}
+.teachers .swiper-pagination{
+  margin-top: 2rem;
+
+}
+.teachers .swiper-pagination-bullet {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: var(--Platinum-color);
+}
