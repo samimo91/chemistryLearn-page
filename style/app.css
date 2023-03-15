@@ -454,5 +454,138 @@ body {
   display: flex;
   font-size: 1.5rem;
   font-weight: bold;
-  padding: 2rem 0 ;
+  padding: 2rem 0;
+}
+
+/* ------------------------------
+======   Footer Style  ======
+------------------------------ */
+
+.footer {
+  background-color: var(--AmericanSilver-color);
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  min-height: 50rem;
+  position: relative;
+}
+.footer .footer-content {
+  padding-top: 6rem;
+}
+.footer .footer-right {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-logo a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.footer .footer-logo__img {
+  width: 9rem;
+  height: 4rem;
+}
+.footer .footer-logo__title {
+  font-family: "IranSans-Bold";
+  font-size: 3rem;
+  padding-right: 1rem;
+  color: var(--AmericanViolet-color);
+  text-shadow: 2px 2px 5px var(--SasquatchSocks-color);
+}
+.footer .footer-address,
+.footer .footer-phone,
+.footer .footer-mail {
+  font-family: "IranSans-Bold";
+}
+.footer .footer-icons {
+  margin-top: 2rem;
+}
+.footer .footer-icon {
+  font-size: 1.8rem;
+  display: inline-block;
+  background: var(--SmokyCharcoal-color);
+  color: var(--AmericanSilver-color);
+  line-height: 1;
+  padding: 0.8rem 0;
+  margin-right: 0.4rem;
+  border-radius: 0.4rem;
+  text-align: center;
+  width: 3.7rem;
+  height: 3.7rem;
+  transition: 0.3s;
+}
+.footer .footer-icon:hover {
+  background: black;
+  color: #fff;
+}
+
+.footer .footer-middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer .footer-middle__right-title,
+.footer .footer-middle__left-title,
+.footer .footer-left__title {
+  font-family: "IranSans-Bold";
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  display: block;
+}
+.footer .footer-middle__right-link,
+.footer-middle__left-link {
+padding-bottom: 1rem;
+}
+
+.footer .footer-middle__right-link:hover,
+.footer-middle__left-link:hover {
+color: var(--SasquatchSocks-color);
+}
+
+.footer .footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.footer .footer-left__title {
+  margin-bottom: 5.5rem;
+}
+
+.footer .footer-left__text {
+  margin-bottom: 1rem;
+}
+.footer .footer-left__mailBox {
+  display: flex;
+  width: 25rem;
+}
+.footer .footer-left__mailBox-box {
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 0 0.5rem 0.5rem 0;
+  border: none;
+  font-size: 1.3rem;
+  font-family: "IranSans-Bold";
+}
+.footer .footer-left__mailBox-btn {
+  border: none;
+  border-radius: 0.5rem 0 0 0.5rem;
+  cursor: pointer;
+  font-family: "IranSans-Bold";
+  font-size: 1.2rem;
+}
+.footer .sub-footer {
+  background-color: var(--SmokyCharcoal-color);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  min-height: 7rem;
+}
+.footer .sub-footer__text {
+  color: var(--Platinum-color);
+  font-family: "IranSans-Bold";
+  text-align: center;
 }

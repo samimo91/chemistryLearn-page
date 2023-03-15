@@ -32,6 +32,12 @@
     border-radius: 0 1rem 1rem 0;
     padding: 0;
   }
+  .footer {
+    height: 60rem;
+  }
+  .footer .footer-left {
+    align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -95,6 +101,15 @@
     border-radius: 1rem 1rem 0 0;
     padding-right: 0;
   }
+  .footer {
+    height: 60rem;
+  }
+  .footer .footer-middle {
+     justify-content: space-between;
+  }
+  .footer .footer-left {
+    align-items: center;
+  }
 }
 
 @media (max-width: 576px) {
@@ -103,5 +118,18 @@
   }
   .teachers .swiper {
     height: 45rem;
+  }
+  .footer {
+    height: 85rem;
+  }
+  .footer .footer-right {
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .footer .footer-middle {
+    justify-content: space-around;
+ }
+  .footer .footer-left {
+    align-items: center;
   }
 }
