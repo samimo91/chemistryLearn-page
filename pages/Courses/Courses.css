@@ -1,6 +1,8 @@
-@import "reset.css";
-@import "grid.css";
-@import "font.css";
+@import "../../style/reset.css";
+@import "../../style/grid.css";
+@import "../../style/font.css";
+@import "../../style/TopBar.css";
+@import "../../style/Footer.css";
 
 /* ------------------------------
 ===========   root   ==========
@@ -24,7 +26,7 @@ a {
 }
 
 /* ------------------------------
-===========   App   ==========
+===========   Courses   ==========
 ------------------------------ */
 
 html {
@@ -50,7 +52,22 @@ body {
 /* --------------------------------
 =======   Helper Class   ======
 -------------------------------- */
+.page-btn {
+  color: var(--AmericanViolet-color);
+  font-family: "IranSans";
+  font-size: 1.8rem;
+  border: 3px solid var(--SasquatchSocks-color);
+  border-radius: 0.5rem;
+  padding: 0.3rem 1rem;
+  text-align: center;
+  transition: all 150ms ease-in;
+}
+.page-btn:hover {
+  color: var(--Platinum-color);
+  background-color: var(--SasquatchSocks-color);
+}
 
 /* -------------------------------
 =======   TopBar Style   =======
 ------------------------------- */
+

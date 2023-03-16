@@ -1,0 +1,135 @@
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  .topBar .menu__item-link {
+    font-size: 1.5rem;
+  }
+  .topBar .menu__item {
+    margin-left: 2rem;
+  }
+  .topBar .landing__title {
+    font-size: 2.5rem;
+  }
+  .topBar .landing__subtitle {
+    font-size: 1.7rem;
+  }
+  .teachers .swiper {
+    height: 38rem;
+  }
+  .articles .article-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .articles .article-right {
+    width: 100%;
+    height: 24rem;
+  }
+  .articles .article__img {
+    border-radius: 0 1rem 1rem 0;
+    padding: 0;
+  }
+  .footer {
+    height: 60rem;
+  }
+  .footer .footer-left {
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .topBar .nav__toggle-icon {
+    display: block;
+  }
+  .topBar .logo {
+    padding-right: 3rem;
+  }
+  .topBar .left-section {
+    padding-left: 3rem;
+  }
+  .topBar .menu__items {
+    position: absolute;
+    background-color: rgba(229, 229, 229);
+    top: 6.5rem;
+    right: 0;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms ease-in;
+    overflow: hidden;
+    height: 0;
+    border-radius: 1rem;
+    z-index: 10;
+  }
+  .topBar .menu__items--open {
+    height: 20rem;
+  }
+  .topBar .menu__item {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+  .topBar .menu__item:first-child {
+    margin-top: 1rem;
+  }
+
+  .topBar .nav__toggle-icon {
+    display: flex;
+  }
+  .topBar .left-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .courses .course-box__title {
+    font-size: 1.6rem;
+  }
+  .teachers .swiper {
+    height: 41rem;
+  }
+  .articles .article-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .articles .article__img {
+    border-radius: 1rem 1rem 0 0;
+    padding-right: 0;
+  }
+  .footer {
+    height: 60rem;
+  }
+  .footer .footer-middle {
+    justify-content: space-between;
+  }
+  .footer .footer-left {
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .topBar .landing__searchbar {
+    width: 80%;
+  }
+  .teachers .swiper {
+    height: 45rem;
+  }
+  .footer {
+    height: 85rem;
+  }
+  .footer .footer-right {
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .footer .footer-middle {
+    justify-content: space-around;
+  }
+  .footer .footer-left {
+    align-items: center;
+  }
+}
