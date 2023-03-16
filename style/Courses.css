@@ -1,0 +1,56 @@
+@import "reset.css";
+@import "grid.css";
+@import "font.css";
+
+/* ------------------------------
+===========   root   ==========
+------------------------------ */
+
+:root {
+  --Platinum-color: #e5e5e5;
+  --AmericanSilver-color: #cecdcf;
+  --SasquatchSocks-color: #be2686;
+  --AmericanViolet-color: #5b1587;
+  --SmokyCharcoal-color: #3b3737;
+}
+
+/* ------------------------------
+=======   Reset Style  =======
+------------------------------ */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ------------------------------
+===========   App   ==========
+------------------------------ */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "IranSans";
+  font-size: 1.6rem;
+  line-height: 1.6;
+  direction: rtl;
+  background-color: #60747b;
+  color: var(--SmokyCharcoal-color);
+}
+
+/* --------------------------------
+=======   Helper Class   ======
+-------------------------------- */
+
+/* -------------------------------
+=======   TopBar Style   =======
+------------------------------- */
