@@ -255,6 +255,7 @@ body {
   width: 4.7rem;
   height: 4.7rem;
   border-radius: 1rem;
+  cursor: pointer;
 }
 
 .header .landing__searchbar-icon {
@@ -535,12 +536,12 @@ body {
 }
 .footer .footer-middle__right-link,
 .footer-middle__left-link {
-padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .footer .footer-middle__right-link:hover,
 .footer-middle__left-link:hover {
-color: var(--SasquatchSocks-color);
+  color: var(--SasquatchSocks-color);
 }
 
 .footer .footer-left {
