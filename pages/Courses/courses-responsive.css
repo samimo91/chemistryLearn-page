@@ -6,7 +6,19 @@
 }
 
 @media (max-width: 768px) {
+    
+.page-header {
+    height: 38rem;
+    padding-top: 4rem;
+  }
 }
 
 @media (max-width: 576px) {
+    .page-header {
+        height: 48rem;
+        padding-top: 2rem;
+      }
+      .category .category__show {
+        flex-direction: column;
+      }
 }

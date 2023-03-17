@@ -140,6 +140,12 @@
 @media (max-width: 1200px) {
 }
 @media (max-width: 992px) {
+  .footer {
+    height: 60rem;
+  }
+  .footer .footer-left {
+    align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
