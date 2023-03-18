@@ -1,12 +1,13 @@
 .topBar {
-  background-color: rgba(229, 229, 229, 0.7);
+  background-color: rgba(229, 229, 229);
   height: 8rem;
+  box-shadow: 0 0 19px rgba(115, 144, 155, 0.3);
 }
 .topBar .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 1rem;
   border-radius: 1rem;
   position: absolute;
   right: 0;

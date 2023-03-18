@@ -1,0 +1,252 @@
+@import "../../style/reset.css";
+@import "../../style/grid.css";
+@import "../../style/font.css";
+@import "../../style/TopBar.css";
+@import "../../style/Footer.css";
+
+/* ------------------------------
+===========   root   ==========
+------------------------------ */
+
+:root {
+  --Platinum-color: #e5e5e5;
+  --AmericanSilver-color: #cecdcf;
+  --SasquatchSocks-color: rgb(190, 38, 134);
+  --AmericanViolet-color: #5b1587;
+  --SmokyCharcoal-color: #3b3737;
+  --page-color: rgba(115, 144, 155, 0.569);
+}
+
+/* ------------------------------
+=======   Reset Style  =======
+------------------------------ */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ------------------------------
+===========   Courses   ==========
+------------------------------ */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "IranSans";
+  font-size: 1.6rem;
+  line-height: 1.6;
+  direction: rtl;
+  background: linear-gradient(
+    to bottom,
+    rgba(229, 229, 229),
+    rgb(206, 205, 207)
+  );
+  color: var(--SmokyCharcoal-color);
+}
+
+/* --------------------------------
+=======   Helper Class   ======
+-------------------------------- */
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.page-btn {
+  color: var(--AmericanViolet-color);
+  font-family: "IranSans";
+  font-size: 1.8rem;
+  border: 3px solid var(--SasquatchSocks-color);
+  border-radius: 0.5rem;
+  padding: 0.3rem 1rem;
+  text-align: center;
+  transition: all 150ms ease-in;
+}
+.page-btn:hover {
+  color: var(--Platinum-color);
+  background-color: var(--SasquatchSocks-color);
+}
+
+/* -----------------------------------
+=======   Page-Header Style   =======
+----------------------------------- */
+
+.page-header {
+  height: 33rem;
+  padding-top: 5rem;
+  margin: 8rem 0;
+}
+.page-header .page-header-content {
+  position: relative;
+}
+.page-header .page-header__title {
+  background-color: rgba(229, 229, 229);
+  box-shadow: 0 0 19px rgba(115, 144, 155, 0.5);
+  position: absolute;
+  z-index: 8;
+  width: 30rem;
+  border-radius: 1rem;
+  right: 2rem;
+}
+.page-header .page-header__title h1 {
+  font-family: "IranSans-Bold";
+  text-shadow: 2px 2px 5px rgba(115, 144, 155, 0.5);
+  font-size: 2.3rem;
+  padding: 2.7rem;
+  text-align: center;
+}
+.page-header .page-header__text {
+  position: absolute;
+  background-color: #afbec3;
+  box-shadow: 0 0 19px rgba(168, 172, 185, 0.5);
+  padding: 6rem 3rem 3rem 3rem;
+  top: 6rem;
+  border-radius: 1rem;
+}
+.page-header .page-header__text p {
+  text-align: justify;
+}
+
+/* -----------------------------------
+=======   Articles Style   =======
+----------------------------------- */
+
+.all-articles .all-articles-content {
+  background: linear-gradient(
+    to bottom,
+    rgba(229, 229, 229, 0.7),
+    rgb(206, 205, 207)
+  );
+  box-shadow: 0 0 19px rgba(115, 144, 155, 0.5);
+  border-radius: 1rem;
+}
+.all-articles .all-articles__show {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  position: relative;
+  border-bottom: 1px solid #6198aa;
+}
+.all-articles .all-articles__path p {
+  font-family: "IranSans-Bold";
+  font-size: 1.8rem;
+}
+.all-articles .all-articles-show__type select {
+  width: 22rem;
+  padding: 1rem;
+  background-color: #afbec3;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: "IranSans-Bold";
+}
+.all-articles .all-articles__selectBox {
+  font-family: "IranSans-Bold";
+}
+
+.all-articles .all-articles-boxes {
+  padding: 3rem 3rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.all-articles .article-box {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--AmericanSilver-color);
+  box-shadow: 0 0 19px rgba(168, 172, 185, 0.5);
+  border-radius: 1rem;
+  transition: all 400ms ease;
+}
+.all-articles .article-box:hover {
+  transform: translateY(-0.6rem);
+}
+.all-articles .article__img {
+  width: 100%;
+  height: 24rem;
+  border-radius: 1rem 1rem 0 0;
+}
+.all-articles .article-left {
+  padding: 0 1.2rem;
+}
+.all-articles .article__title {
+  display: block;
+  text-align: center;
+  padding: 0.7rem 0 2rem 0;
+  font-family: "IranSans-Bold";
+  font-size: 1.8rem;
+}
+.all-articles .article__text {
+  text-align: justify;
+  font-size: 1.7rem;
+}
+.all-articles .article__btn {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 2rem 0;
+}
+
+/* -----------------------------
+=======   Responsive   =======
+----------------------------- */
+
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  .all-articles .article-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .all-articles .article-right {
+    width: 100%;
+    height: 24rem;
+  }
+  .all-articles .article__img {
+    border-radius: 0 1rem 1rem 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    height: 38rem;
+    padding-top: 4rem;
+  }
+  .all-articles .article-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .all-articles .article__img {
+    border-radius: 1rem 1rem 0 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-header {
+    height: 48rem;
+    padding-top: 2rem;
+  }
+  .all-articles .all-articles__show {
+        flex-direction: column;
+      }
+}
